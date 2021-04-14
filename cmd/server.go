@@ -418,7 +418,7 @@ func newServerCmd() *cobra.Command {
 					"message": "pong",
 				})
 			})
-			return r.Run("0.0.0.0:8090")
+			return r.Run(srvOptions.address)
 		},
 	}
 	persistentFlags := cmd.PersistentFlags()
